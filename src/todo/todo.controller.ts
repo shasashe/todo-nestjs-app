@@ -4,7 +4,8 @@ import { CreateTodoDto } from './dto/create-todo.dto';
 import { UpdateTodoDto } from './dto/update-todo.dto';
 import { JwtAuthGuard } from '../auth/auth.guard';
 import { ApiBearerAuth, ApiOperation, ApiTags } from '@nestjs/swagger';
-import { UserEmail } from 'src/common/decorator/user-email.decorator';
+import { UserEmail } from '../common/decorator/user-email.decorator';
+
 
 
 @ApiTags('Todo')
