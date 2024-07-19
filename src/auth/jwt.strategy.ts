@@ -2,6 +2,8 @@ import { Injectable } from "@nestjs/common";
 import { PassportStrategy } from "@nestjs/passport";
 import {Strategy, ExtractJwt} from "passport-jwt"
 import { DatabaseService } from "src/database/database.service";
+import { UserEmail } from '../common/decorator/user-email.decorator';
+
 
 @Injectable()
 export class JwtStrategy extends PassportStrategy(Strategy){
